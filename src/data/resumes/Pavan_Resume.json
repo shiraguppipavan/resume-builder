@@ -1,0 +1,172 @@
+{
+  "resumeTitle": "Pavan Resume",
+  "name": "Pavan Gururaj Shiraguppi",
+  "title": "Gen AI Engineer | Data Scientist | systems Engineer",
+  "summary": "Generative AI Engineer SME with a unique trajectory spanning Systems Integration, Data Science, and LLM Engineering. Proven track record of building production-grade AI solutions contributing to $10M+ in revenue. Specialized in LLM fine-tuning, RAG architectures, and multi-robot system integration (RoboCafe). Expert in designing experiments, validating models, and deploying AI at scale. Bilingual in English and Japanese (N2).",
+  "contact": {
+    "location": "Bengaluru, India",
+    "phone": "(+91) 8861239872",
+    "email": "shiraguppipavan@gmail.com",
+    "linkedin": "linkedin.com/in/pavan-shiraguppi",
+    "linkedinUrl": "https://linkedin.com/in/pavan-shiraguppi"
+  },
+  "experience": [
+    {
+      "id": "628f7f35-79ba-4d1c-b350-1352befc0f90",
+      "role": "Watsonx Platform SME",
+      "company": "IBM INDIA PVT ltd",
+      "location": "Bengaluru, India",
+      "period": "01/2026 - Present",
+      "highlights": [
+        "Subject Matter Expert (SME) for the IBM watsonx platform, leading secure on-premise deployments of watsonx.ai and watsonx Orchestrate to architect scalable, compliant generative AI infrastructure for enterprise environments."
+      ]
+    },
+    {
+      "id": "ibm",
+      "role": "Generative AI Engineer",
+      "company": "IBM India PVT LTD",
+      "location": "Bengaluru, India",
+      "period": "08/2023 - 01/2026",
+      "highlights": [
+        "Spearheaded high-impact Generative AI engagements contributing to over $10M in revenue, designing and optimizing enterprise LLM solutions for digital transformation.",
+        "Fine-tuned and optimized custom Large Language Models (LLMs) including Llama, Granite, and GPT variants to maximize domain-specific accuracy and reduce token latency by 40%.",
+        "Architected advanced RAG (Retrieval-Augmented Generation) systems integrating vector databases (ChromaDB, Pinecone) for context-aware AI applications.",
+        "Built intelligent AI agents using IBM Watsonx Orchestrate and LangChain, enabling autonomous task execution and complex multi-step reasoning."
+      ]
+    },
+    {
+      "id": "kushagramati",
+      "role": "Generative AI Advisor, SME",
+      "company": "Kushagramati Analytics",
+      "location": "Bengaluru, India",
+      "period": "02/2023 - 08/2023",
+      "highlights": [
+        "Advised enterprise clients on Generative AI adoption strategies, identifying high-ROI use cases for LLM integration.",
+        "Conducted feasibility studies for RAG architectures, guiding technical teams on model selection (OpenAI vs Open Source) and infrastructure requirements.",
+        "Established governance frameworks for LLM evaluation, defining metrics for hallucination rates and response accuracy."
+      ]
+    },
+    {
+      "id": "hci-ml",
+      "role": "Data Scientist",
+      "company": "HCI",
+      "location": "Osaka, Japan",
+      "period": "04/2022 – 02/2023",
+      "highlights": [
+        "Designed and devised GPT-driven recommendation algorithms, applying collaborative filtering techniques to improve semantic relevance.",
+        "Conducted advanced NLP modeling for sentiment analysis and entity extraction, leveraging BERT transformers to achieve high-precision text classification.",
+        "Researched and validated RAG methodologies, experimenting with vector embeddings to solve context-window limitations.",
+        "Performed rigorous A/B testing on model inference parameters, statistically validating improvements in response quality."
+      ]
+    },
+    {
+      "id": "hci-ds",
+      "role": "Systems Engineer",
+      "company": "HCI",
+      "location": "Osaka, Japan",
+      "period": "12/2020 - 03/2022",
+      "highlights": [
+        "Architected the 'RoboCafe' bio-system, orchestrating interoperability between industrial arms (Kawasaki, Yaskawa, Mitsubishi) and service robots (Pudu Robotics, AGVs).",
+        "Designed the precise integration protocols between stationary industrial robots and mobile service robots, enabling seamless physical handoffs and synchronized path planning.",
+        "Integrated Computer Vision models with robot arm kinematics to enable autonomous object manipulation in a dynamic café environment.",
+        "Bridged the gap between hardware interfaces (PLCs, Robot Controllers) and software AI modules, creating a seamless end-to-end automated solution."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "imt",
+      "institution": "Institute of Management Technology, Ghaziabad",
+      "degree": "MBA - Design Thinking and Entrepreneurship",
+      "period": "07/2023 - 06/2024"
+    },
+    {
+      "id": "manipal",
+      "institution": "Manipal Institute of Technology, Manipal",
+      "degree": "B.Tech - Electronics and Instrumentation",
+      "period": "07/2015 - 06/2019"
+    }
+  ],
+  "skills": {
+    "Generative AI": [
+      "LLM Fine-tuning",
+      "RAG Architecture",
+      "Prompt Optimization",
+      "LangChain",
+      "Watsonx",
+      "RAGAS",
+      "CrewAI"
+    ],
+    "Machine Learning": [
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "XGBoost",
+      "Hugging Face Transformers"
+    ],
+    "Data Science": [
+      "Pandas",
+      "NumPy",
+      "Statistical Modeling",
+      "A/B Testing",
+      "EDA",
+      "Streamlit",
+      "Gradio"
+    ],
+    "NLP & Computer Vision": [
+      "BERT",
+      "GPT",
+      "Transformers",
+      "OpenCV",
+      "Sentiment Analysis",
+      "Text Classification"
+    ],
+    "Vector Databases": [
+      "ChromaDB",
+      "Pinecone",
+      "FAISS",
+      "Weaviate"
+    ],
+    "Languages": [
+      "Python",
+      "SQL"
+    ],
+    "AI Infrastructure & Deployment": [
+      "AWS SageMaker",
+      "MLflow",
+      "Model Serving",
+      "LlamaIndex"
+    ]
+  },
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native or Bilingual Proficiency"
+    },
+    {
+      "language": "Japanese",
+      "proficiency": "Full Professional Proficiency (N2)"
+    }
+  ],
+  "certifications": [
+    "Academy Accreditation - Databricks Lakehouse Fundamentals",
+    "AMR Robot Training - Intermediate Level",
+    "Japanese Language Proficiency - Level N2"
+  ],
+  "publications": [
+    {
+      "title": "RoboCafe: Multi-Robot Café Automation System",
+      "url": "https://youtu.be/cvOc5uoqdBo"
+    },
+    {
+      "title": "Library Robot: Autonomous Book Retrieval System",
+      "url": "https://youtu.be/0SNUPvxoKJs"
+    },
+    {
+      "title": "Ritsumeikan University Robotics Demo",
+      "url": "https://youtu.be/_y39o1qxa2Q"
+    }
+  ],
+  "id": "default",
+  "updatedAt": "2026-02-10T13:58:18.799Z"
+}

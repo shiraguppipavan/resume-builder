@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavan Gururaj Shiraguppi - Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"IBM Plex Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            dark: '#1a1a1a',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * {
+      hyphens: none;
+      -webkit-hyphens: none;
+      -moz-hyphens: none;
+      -ms-hyphens: none;
+    }
+
+    body {
+      background-color: #f3f4f6;
+      color: #1a1a1a;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Custom scrollbar for web view */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #d1d5db;
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #9ca3af;
+    }
+
+    /* Print specific overrides */
+    @media print {
+      @page {
+        margin: 0;
+        size: A3;
+      }
+
+      body {
+        background-color: white;
+        margin: 0;
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      .print-break-inside-avoid {
+        break-inside: avoid;
+      }
+
+      #root {
+        width: 100%;
+      }
+
+      .resume-container {
+        box-shadow: none !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: auto !important;
+        padding: 40px 50px !important;
+        /* Ensure internal padding creates margin */
+      }
+
+      /* Force header background to print */
+      header {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+
+      }
+
+      /* Preserve hyperlinks - don't change color or decoration */
+      a {
+        color: inherit !important;
+      }
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/index.tsx"></script>
+
+</body>
+
+</html>

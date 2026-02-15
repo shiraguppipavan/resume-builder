@@ -1,0 +1,123 @@
+{
+    "resumeTitle": "Sampada Resume",
+    "name": "Sampada Ingalgi",
+    "title": "Senior Clinical Data Programmer | CDISC SDTM Developer | EDC Migration Specialist",
+    "summary": "Senior Clinical Data Programmer with 4+ years of experience in clinical data migration, EDC platform management, and CDISC standards compliance. Proven expertise in leading Oracle InForm to REDCap Cloud migrations and SDTM development for global pharmaceutical clients including Pfizer and Merck. Skilled in end-to-end clinical data lifecycle management, regulatory-compliant deliverables, and mentoring cross-functional programming teams.",
+    "contact": {
+        "location": "Bangalore, India",
+        "phone": "(+91) 87928 40393",
+        "email": "sampadaingalgi@gmail.com",
+        "linkedin": "linkedin.com/in/sampada23",
+        "linkedinUrl": "https://linkedin.com/in/sampada23"
+    },
+    "experience": [
+        {
+            "id": "pfizer",
+            "role": "Senior Clinical Database Developer",
+            "company": "Accenture Solutions Pvt Ltd (Client: Pfizer)",
+            "location": "Bangalore, India",
+            "period": "05/2025 - Present",
+            "highlights": [
+                "Worked as part of the platform migration team for multiple clinical studies involving migration from Oracle InForm to REDCap Cloud.",
+                "Performed migration study build activities, including study design review, CRF comparison, metadata assessment, and setup in REDCap Cloud.",
+                "Supported study setup and build in REDCap Cloud based on InForm and Rave specifications, protocols, and data management plans.",
+                "Executed data mapping, validation, and migration testing to ensure data quality and regulatory compliance.",
+                "Assisted in UAT support, issue resolution, validation, and post-migration data review to ensure accuracy and completeness.",
+                "Ensured adherence to CDISC standards, SOPs, and regulatory requirements throughout all migration activities.",
+                "Acted as a technical mentor to junior programmers, guiding programming, validation practices, and clinical data workflows.",
+                "Collaborated closely with global stakeholders to deliver migration milestones within defined timelines."
+            ]
+        },
+        {
+            "id": "merck",
+            "role": "Clinical Data Mapping Programmer",
+            "company": "Accenture Solutions Pvt Ltd (Client: Merck)",
+            "location": "Bangalore, India",
+            "period": "10/2021 - 04/2025",
+            "highlights": [
+                "Led and contributed to multiple clinical studies involving Oracle InForm platform migration from 4.x to 7.x using DMW (Data Management Workbench), consistently meeting aggressive timelines.",
+                "Designed and developed analytical datasets and SDTM-compliant datasets, including mapping and conversion to CDISC SDTM (IG 3.1.1) standards.",
+                "Developed robust SDTM programming solutions from raw CRF data in alignment with specifications, CDISC standards, and project milestones.",
+                "Performed end-to-end SDTM lifecycle activities, including dataset generation, validation, and independent QC.",
+                "Reviewed E2E, milestone, and protocol-driven SDTM and derived dataset reports, providing detailed technical and quality-focused feedback.",
+                "Ensured strict compliance with project requirements, SOPs, and internal standards, maintaining audit and inspection readiness.",
+                "Provided programming and data standards support for regulatory-compliant CDISC databases and submission deliverables.",
+                "Managed multiple studies simultaneously under tight timelines without compromising quality.",
+                "Delivered integrated and migrated study outputs using tools such as InForm, DMW, Contivo, and CLMM.",
+                "Acted as a technical mentor to junior programmers, guiding SDTM programming, validation practices, and clinical data workflows."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "id": "be-cs",
+            "institution": "Brindavan College of Engineering, VTU, Bangalore",
+            "degree": "B.E. - Computer Science",
+            "period": "08/2016 - 09/2020"
+        },
+        {
+            "id": "puc",
+            "institution": "Deeksha KMWA PU College, Bangalore",
+            "degree": "Pre-University Course (PUC)",
+            "period": "07/2015 - 06/2016"
+        },
+        {
+            "id": "sslc",
+            "institution": "VVS Sardar Patel High School, Bangalore",
+            "degree": "SSLC",
+            "period": "06/2013 - 04/2014"
+        }
+    ],
+    "skills": {
+        "EDC Platforms & Clinical Tools": [
+            "Oracle InForm",
+            "REDCap Cloud",
+            "Oracle Rave",
+            "DMW (Data Management Workbench)",
+            "Contivo"
+        ],
+        "CDISC Standards": [
+            "SDTM",
+            "SDTM IG 3.1.1",
+            "Define.xml"
+        ],
+        "Clinical Data Management": [
+            "Data Mapping & Migration",
+            "Study Build & Setup",
+            "QC & Data Review"
+        ],
+        "Programming & Databases": [
+            "SQL",
+            "Python",
+            "Oracle Database",
+            "PowerBI"
+        ],
+        "Regulatory & Compliance": [
+            "ICH-GCP",
+            "SOPs & Work Instructions"
+        ],
+        "Soft Skills": [
+            "Technical Mentoring",
+            "Stakeholder Collaboration",
+            "Multi-Study Management"
+        ]
+    },
+    "languages": [
+        {
+            "language": "English",
+            "proficiency": "Full Professional Proficiency"
+        },
+        {
+            "language": "Kannada",
+            "proficiency": "Native Proficiency"
+        },
+        {
+            "language": "Hindi",
+            "proficiency": "Professional Working Proficiency"
+        }
+    ],
+    "certifications": [],
+    "publications": [],
+    "id": "sampada",
+    "updatedAt": "2026-02-15T17:05:15.000Z"
+}

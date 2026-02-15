@@ -1,0 +1,55 @@
+{
+    "resumeTitle": "New Resume",
+    "name": "Your Name",
+    "title": "Professional Title",
+    "summary": "Brief professional summary...",
+    "contact": {
+        "location": "City, Country",
+        "phone": "Phone Number",
+        "email": "email@example.com",
+        "linkedin": "linkedin.com/in/username",
+        "linkedinUrl": "https://linkedin.com/in/username"
+    },
+    "experience": [
+        {
+            "id": "exp1",
+            "role": "Job Role",
+            "company": "Company Name",
+            "location": "Location",
+            "period": "MM/YYYY - MM/YYYY",
+            "highlights": [
+                "Key achievement or responsibility 1",
+                "Key achievement or responsibility 2"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "id": "edu1",
+            "institution": "University Name",
+            "degree": "Degree / Qualification",
+            "period": "MM/YYYY - MM/YYYY"
+        }
+    ],
+    "skills": {
+        "Skills Category": [
+            "Skill 1",
+            "Skill 2"
+        ]
+    },
+    "languages": [
+        {
+            "language": "Language",
+            "proficiency": "Proficiency Level"
+        }
+    ],
+    "certifications": [
+        "Certification or License"
+    ],
+    "publications": [
+        {
+            "title": "Publication or Project Title",
+            "url": "https://example.com"
+        }
+    ]
+}
