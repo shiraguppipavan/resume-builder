@@ -121,8 +121,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
                                 </button>
                                 <button
                                     onClick={(e) => { e.stopPropagation(); onDelete(resume.id!); }}
-                                    className="p-1 hover:bg-gray-200 rounded text-gray-400 hover:text-red-500"
-                                    title="Delete"
+                                    disabled={resumes.length <= 1}
+                                    className="p-1 hover:bg-gray-200 rounded text-gray-400 hover:text-red-500 disabled:opacity-30 disabled:cursor-not-allowed"
+                                    title={resumes.length <= 1 ? "Cannot delete the last resume" : "Delete"}
                                 >
                                     <Trash2 size={12} />
                                 </button>
@@ -169,7 +170,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 </div>
 
                 <div className="p-4 border-t border-gray-100 text-[10px] text-gray-400">
-                    Last updated: {new Date().toLocaleDateString()}
+                    Last updated: {(() => {
+                        const current = resumes.find(r => r.id === currentId);
+                        const ts = current?.updatedAt;
+                        return ts ? new Date(ts).toLocaleDateString() : '—';
+                    })()}
                 </div>
             </div>
         </div>

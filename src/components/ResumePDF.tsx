@@ -8,12 +8,12 @@ import { ResumeData } from '@/types';
 // Disable hyphenation globally for the PDF
 Font.registerHyphenationCallback(word => [word]);
 
-const styles = StyleSheet.create({
+const makeStyles = (s: number) => StyleSheet.create({
     page: {
         flexDirection: 'column',
         backgroundColor: '#FFFFFF',
         padding: 0,
-        fontFamily: 'Helvetica', // Standard font
+        fontFamily: 'Helvetica',
     },
     container: {
         flexDirection: 'column',
@@ -22,44 +22,44 @@ const styles = StyleSheet.create({
     },
     // Header
     header: {
-        padding: 50, // Increased from 40
-        paddingBottom: 30,
+        padding: 50 * s,
+        paddingBottom: 30 * s,
         backgroundColor: '#1a1a1a',
         alignItems: 'center',
-        flexDirection: 'column', // Ensure column direction
+        flexDirection: 'column',
     },
     name: {
-        fontSize: 30, // Increased from 24
+        fontSize: 30 * s,
         fontWeight: 'bold',
         fontFamily: 'Times-Roman',
-        marginBottom: 12,
+        marginBottom: 32 * s,
         textTransform: 'uppercase',
         color: '#FFFFFF',
-        lineHeight: 1.2, // Added line height
+        lineHeight: 1.2,
     },
     title: {
-        fontSize: 12, // Increased from 10
+        fontSize: 9 * s,
         color: '#D1D5DB',
         textTransform: 'uppercase',
-        letterSpacing: 2,
-        marginBottom: 15,
-        marginTop: 5, // Added top margin for separation
+        letterSpacing: 1,
+        marginBottom: 15 * s,
+        marginTop: 5 * s,
     },
     contactRow: {
         flexDirection: 'row',
         justifyContent: 'center',
         flexWrap: 'wrap',
-        gap: 15,
+        gap: 15 * s,
     },
     contactItem: {
-        fontSize: 11, // Increased from 9
-        color: '#D1D5DB', // gray-300
+        fontSize: 11 * s,
+        color: '#D1D5DB',
         flexDirection: 'row',
         alignItems: 'center',
     },
     link: {
         textDecoration: 'none',
-        color: '#D1D5DB', // gray-300
+        color: '#D1D5DB',
     },
     // Main Layout
     mainLayout: {
@@ -68,90 +68,90 @@ const styles = StyleSheet.create({
     },
     // Sidebar (Left)
     sidebar: {
-        width: '35%', // Increased from 32%
+        width: '35%',
         backgroundColor: '#FFFFFF',
-        padding: 25, // Increased from 15
+        padding: 25 * s,
         borderRightWidth: 1,
         borderRightColor: '#E5E7EB',
     },
     // Main Content (Right)
     mainContent: {
-        width: '65%', // Adjusted to match sidebar increase
-        padding: 30, // Increased from 20
-        paddingRight: 30, // Added padding to the right side
+        width: '65%',
+        padding: 30 * s,
+        paddingRight: 30 * s,
     },
     // Section
     section: {
-        marginBottom: 25, // Increased from 15
+        marginBottom: 25 * s,
     },
     sectionTitle: {
-        fontSize: 14, // Increased from 10
+        fontSize: 14 * s,
         fontWeight: 'bold',
         textTransform: 'uppercase',
         letterSpacing: 2,
-        marginBottom: 12, // Increased from 8
+        marginBottom: 12 * s,
         color: '#1a1a1a',
         borderBottomWidth: 1,
         borderBottomColor: '#E5E7EB',
-        paddingBottom: 6, // Increased from 4
+        paddingBottom: 6 * s,
     },
     // Education
     eduItem: {
-        marginBottom: 12, // Increased from 8
+        marginBottom: 12 * s,
     },
     eduInst: {
-        fontSize: 11, // Increased from 9
+        fontSize: 11 * s,
         fontWeight: 'bold',
-        marginBottom: 2,
+        marginBottom: 2 * s,
         lineHeight: 1.2,
     },
     eduDegree: {
-        fontSize: 11, // Increased from 9
+        fontSize: 11 * s,
         fontStyle: 'italic',
         color: '#4B5563',
-        marginBottom: 2,
+        marginBottom: 2 * s,
         lineHeight: 1.2,
     },
     eduDate: {
-        fontSize: 10, // Increased from 8
+        fontSize: 10 * s,
         color: '#6B7280',
         backgroundColor: '#F3F4F6',
-        padding: 3, // Increased from 2
+        padding: 3 * s,
         borderRadius: 2,
         alignSelf: 'flex-start',
-        marginTop: 2,
+        marginTop: 2 * s,
     },
     // Skills
     skillRow: {
         flexDirection: 'row',
         flexWrap: 'wrap',
-        gap: 6, // Increased from 4
+        gap: 6 * s,
     },
     skillBadge: {
-        fontSize: 10, // Increased from 8
+        fontSize: 10 * s,
         color: '#1F2937',
         borderWidth: 1,
         borderColor: '#D1D5DB',
-        paddingHorizontal: 5, // Increased from 3
-        paddingVertical: 2, // Increased from 1
-        marginBottom: 4, // Increased from 3
-        marginRight: 4, // Increased from 3
+        paddingHorizontal: 5 * s,
+        paddingVertical: 2 * s,
+        marginBottom: 4 * s,
+        marginRight: 4 * s,
     },
     // Certs & Publications
     listItem: {
-        fontSize: 10, // Increased from 8
+        fontSize: 10 * s,
         color: '#374151',
-        marginBottom: 4, // Increased from 3
+        marginBottom: 4 * s,
         lineHeight: 1.3,
     },
     pubLink: {
-        fontSize: 10, // Increased from 8
+        fontSize: 10 * s,
         fontWeight: 'bold',
         color: '#1a1a1a',
         textDecoration: 'none',
     },
     pubUrl: {
-        fontSize: 9, // Increased from 7
+        fontSize: 9 * s,
         color: '#6B7280',
         fontFamily: 'Courier',
     },
@@ -161,88 +161,88 @@ const styles = StyleSheet.create({
         alignItems: 'flex-start',
         borderBottomWidth: 1,
         borderBottomColor: '#E5E7EB',
-        paddingBottom: 4, // Increased from 3
-        marginBottom: 4, // Increased from 3
+        paddingBottom: 4 * s,
+        marginBottom: 4 * s,
     },
     langName: {
-        fontSize: 10, // Increased from 8
+        fontSize: 10 * s,
         fontWeight: 'medium',
-        marginBottom: 2, // Increased from 1
+        marginBottom: 2 * s,
     },
     langLevel: {
-        fontSize: 9, // Increased from 7
+        fontSize: 9 * s,
         color: '#6B7280',
     },
     // Experience
     expItem: {
-        marginBottom: 10, // Reduced from 25 to accommodate separator
+        marginBottom: 10 * s,
     },
     separator: {
         borderBottomWidth: 1,
         borderBottomColor: '#E5E7EB',
         borderBottomStyle: 'dotted',
-        marginBottom: 15,
-        marginTop: 5,
+        marginBottom: 15 * s,
+        marginTop: 5 * s,
     },
     expHeader: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'baseline',
-        marginBottom: 10, // Increased from 8
+        marginBottom: 10 * s,
     },
     expRole: {
-        fontSize: 14, // Increased from 11
+        fontSize: 14 * s,
         fontWeight: 'bold',
         color: '#1a1a1a',
     },
     expDate: {
-        fontSize: 11, // Increased from 9
+        fontSize: 11 * s,
         color: '#6B7280',
     },
     expCompany: {
-        fontSize: 11, // Increased from 9
+        fontSize: 11 * s,
         fontWeight: 'bold',
         color: '#4B5563',
-        marginBottom: 12, // Increased from 10
+        marginBottom: 12 * s,
         textTransform: 'uppercase',
     },
     bulletRow: {
         flexDirection: 'row',
         alignItems: 'flex-start',
-        paddingVertical: 3, // Increased from 2
     },
     bulletPoint: {
-        width: 12,
-        fontSize: 11, // Increased from 9
+        width: 12 * s,
+        fontSize: 11 * s,
         color: '#374151',
-        lineHeight: 1.5,
+        lineHeight: 1.2,
     },
     bulletText: {
-        flex: 1,
-        fontSize: 11, // Increased from 9
+        fontSize: 11 * s,
         color: '#374151',
-        lineHeight: 1.5,
+        lineHeight: 1.2,
         textAlign: 'left',
     },
     summary: {
-        fontSize: 12, // Increased from 10
+        fontSize: 12 * s,
         lineHeight: 1.5,
         color: '#1F2937',
-        textAlign: 'left', // Changed from justify
-        marginBottom: 25,
+        textAlign: 'left',
     },
 });
 
 interface ResumePDFProps {
     data: ResumeData;
+    scale?: number;
 }
 
-const ResumePDF: React.FC<ResumePDFProps> = ({ data }) => {
+const ResumePDF: React.FC<ResumePDFProps> = ({ data, scale }) => {
+    const data_scale = scale ?? 1;
+    const styles = makeStyles(data_scale);
     // Guard: Don't render if data is missing critical fields
     if (!data) {
         return (
             <Document>
-                <Page size="A3" style={styles.page}>
+                <Page size="A4" style={styles.page}>
                     <View style={styles.container}>
                         <Text>Loading resume data...</Text>
                     </View>
@@ -276,7 +276,7 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data }) => {
 
     return (
         <Document title={`${String(data.resumeTitle || data.name || 'Resume')}`}>
-            <Page size="A3" style={styles.page}>
+            <Page size="A4" style={styles.page}>
                 <View style={styles.container}>
                     {/* Header */}
                     <View style={styles.header}>
@@ -307,8 +307,8 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data }) => {
                             {safeEducation.length > 0 && (
                             <View style={styles.section}>
                                 <Text style={styles.sectionTitle}>Education</Text>
-                                {safeEducation.map((edu) => (
-                                    <View key={edu.id || Math.random().toString()} style={styles.eduItem}>
+                                {safeEducation.map((edu, idx) => (
+                                    <View key={edu.id || String(idx)} style={styles.eduItem}>
                                         <Text style={styles.eduInst}>{String(edu.institution || '')}</Text>
                                         <Text style={styles.eduDegree}>{String(edu.degree || '')}</Text>
                                         <Text style={styles.eduDate}>{String(edu.period || '')}</Text>
@@ -321,10 +321,10 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data }) => {
                             {Object.keys(safeSkills).length > 0 && (
                             <View style={styles.section}>
                                 <Text style={styles.sectionTitle}>Technical Skills</Text>
-                                <View style={{ flexDirection: 'column', gap: 8 }}>
+                                <View style={{ flexDirection: 'column', gap: 8 * data_scale }}>
                                     {Object.entries(safeSkills).map(([category, skillList]) => (
-                                        <View key={category} style={{ marginBottom: 4 }}>
-                                            <Text style={{ fontSize: 10, fontWeight: 'bold', color: '#6B7280', textTransform: 'uppercase', marginBottom: 6 }}>
+                                        <View key={category} style={{ marginBottom: 4 * data_scale }}>
+                                            <Text style={{ fontSize: 10 * data_scale, fontWeight: 'bold', color: '#6B7280', textTransform: 'uppercase', marginBottom: 6 * data_scale }}>
                                                 {String(category)}
                                             </Text>
                                             <View style={styles.skillRow}>
@@ -353,7 +353,7 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data }) => {
                             <View style={styles.section}>
                                 <Text style={styles.sectionTitle}>Publications</Text>
                                 {safePublications.map((pub, idx) => (
-                                    <View key={idx} style={{ marginBottom: 6 }}>
+                                    <View key={idx} style={{ marginBottom: 6 * data_scale }}>
                                         <Link src={String(pub.url || '#')} style={styles.pubLink}>
                                             <Text>{String(pub.title || '')}</Text>
                                         </Link>
@@ -380,13 +380,13 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data }) => {
                         {/* Main Content */}
                         <View style={styles.mainContent}>
                             {/* Profile */}
-                            <View style={styles.section}>
+                            <View style={[styles.section, { paddingBottom: 20 * data_scale }]}>
                                 <Text style={styles.sectionTitle}>Profile</Text>
                                 <Text style={styles.summary}>{String(summary || '')}</Text>
                             </View>
 
                             {/* Experience */}
-                            <View style={styles.section}>
+                            <View style={[styles.section, { paddingTop: 24 * data_scale }]}>
                                 <Text style={styles.sectionTitle}>Professional Experience</Text>
                                 {safeExperience.map((job, index) => (
                                     <View key={job.id || index}>
@@ -397,12 +397,10 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data }) => {
                                             </View>
                                             <Text style={styles.expCompany}>{String(job.company || '')} | {String(job.location || '')}</Text>
                                             <View style={{ flexDirection: 'column' }}>
-                                                {(job.highlights || []).map((highlight, idx) => (
-                                                    <View key={idx} style={{ marginBottom: idx < (job.highlights || []).length - 1 ? 10 : 0 }}>
-                                                        <View style={styles.bulletRow}>
-                                                            <Text style={styles.bulletPoint}>•</Text>
-                                                            <Text style={styles.bulletText}>{String(highlight || '')}</Text>
-                                                        </View>
+                                                {(job.highlights || []).filter(h => String(h || '').trim() !== '').map((highlight, idx) => (
+                                                    <View key={idx} style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: idx > 0 ? 16 * data_scale : 0 }}>
+                                                        <Text style={styles.bulletPoint}>•</Text>
+                                                        <Text style={styles.bulletText}>{String(highlight || '')}</Text>
                                                     </View>
                                                 ))}
                                             </View>

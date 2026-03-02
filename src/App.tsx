@@ -1,9 +1,9 @@
 import React from 'react';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import ResumePDF from './components/ResumePDF';
 import { Icons } from './components/Icon';
 import { Section } from './components/Section';
 import { ExperienceCard } from './components/ExperienceCard';
-import { PDFDownloadLink } from '@react-pdf/renderer';
-import ResumePDF from './components/ResumePDF';
 import { useResumes } from './hooks/useResumes';
 import { Sidebar } from './components/Sidebar';
 
@@ -22,6 +22,10 @@ const App: React.FC = () => {
 
   const [isEditing, setIsEditing] = React.useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = React.useState(true);
+
+  React.useEffect(() => {
+    setIsEditing(false);
+  }, [currentResume.id]);
 
   // Drag-and-drop state for experience reordering
   const [dragIndex, setDragIndex] = React.useState<number | null>(null);
@@ -156,13 +160,13 @@ const App: React.FC = () => {
 
         <PDFDownloadLink
           key={`pdf-${currentResume.id}-${currentResume.updatedAt || ''}`}
-          document={<ResumePDF data={currentResume} />}
+          document={<ResumePDF data={currentResume} scale={0.80} />}
           fileName={`${(currentResume.resumeTitle || currentResume.name || 'Resume').replace(/\s+/g, '_')}_Resume.pdf`}
           className="no-print"
         >
           {({ loading, error }) => (
             <button
-              className="flex items-center gap-2 bg-dark text-white px-6 py-3 rounded-full shadow-2xl hover:bg-black hover:scale-105 transition-all cursor-pointer w-full"
+              className="flex items-center gap-2 bg-dark text-white px-6 py-3 rounded-full shadow-2xl hover:bg-black hover:scale-105 transition-all cursor-pointer w-full disabled:opacity-60"
               title="Save as PDF"
               disabled={loading || !!error}
             >
@@ -175,8 +179,10 @@ const App: React.FC = () => {
         </PDFDownloadLink>
       </div>
 
-      {/* Resume Paper Container */}
-      <div className="resume-container w-full max-w-[297mm] bg-white shadow-2xl print:shadow-none min-h-[420mm] print:min-h-0 flex flex-col print:block relative z-10 transition-all duration-300">
+      {/* Resume Paper Container — true A4 canvas */}
+      <div className="resume-container w-[210mm] bg-white shadow-2xl print:shadow-none min-h-[297mm] print:min-h-0 relative z-10 transition-all duration-300">
+
+        <div className="flex flex-col min-h-[297mm] print:min-h-0">
 
         {/* Bold Header with Dark Background */}
         <header className="bg-[#1a1a1a] text-white px-8 pt-8 pb-6 md:px-12 md:pt-10 md:pb-8 print:px-8 print:pt-6 print:pb-6">
@@ -366,8 +372,8 @@ const App: React.FC = () => {
                         <div className="flex items-center justify-between mb-2">
                           <input
                             className="text-xs font-bold text-gray-500 uppercase tracking-wider outline-none border-b border-blue-100 focus:border-blue-400 flex-1"
-                            defaultValue={category}
-                            onBlur={(e) => handleUpdateCategoryName(category, e.target.value)}
+                            value={category}
+                            onChange={(e) => handleUpdateCategoryName(category, e.target.value)}
                           />
                           <button
                             onClick={() => handleDeleteCategory(category)}
@@ -604,7 +610,7 @@ const App: React.FC = () => {
           <main className="md:w-[68%] print:w-[68%] p-8 md:p-12 print:pr-0">
 
             {/* Profile / Summary */}
-            <div className="mb-8 border-b border-gray-200 pb-8">
+            <div className="mb-10 pb-8" style={{ borderBottom: '1px dotted #D1D5DB' }}>
               <h2 className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-dark mb-4 flex items-center gap-2">
                 Profile
               </h2>
@@ -622,7 +628,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Experience */}
-            <Section title="Professional Experience">
+            <Section title="Professional Experience" className="mt-8">
               <div className="flex flex-col">
                 {currentResume.experience.map((job, index) => (
                   <div
@@ -709,6 +715,9 @@ const App: React.FC = () => {
 
           </main>
         </div>
+
+        </div>
+
       </div>
     </div>
   );

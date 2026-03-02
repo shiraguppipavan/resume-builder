@@ -89,7 +89,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
                 </button>
               </div>
             ) : (
-              point
+              String(point || '')
             )}
           </li>
         ))}
@@ -98,7 +98,8 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
         {isEditing && (
           <button
             onClick={() => onUpdate?.({ highlights: [...data.highlights, ""] })}
-            className="text-xs text-blue-600 hover:underline mt-2 flex items-center gap-1"
+            disabled={data.highlights.length > 0 && data.highlights[data.highlights.length - 1].trim() === ''}
+            className="text-xs text-blue-600 hover:underline mt-2 flex items-center gap-1 disabled:opacity-40 disabled:cursor-not-allowed"
           >
             + Add Bullet Point
           </button>

@@ -17,6 +17,9 @@ export const useResumes = () => {
             try {
                 const parsed = JSON.parse(saved);
                 // Migration: Ensure resumeTitle exists for existing resumes
+                if (!Array.isArray(parsed.resumes)) {
+                    throw new Error('parsed.resumes is not an array');
+                }
                 parsed.resumes = parsed.resumes.map((r: ResumeData) => ({
                     ...BLANK_RESUME, // Use blank template as base for missing fields
                     ...r,
@@ -25,6 +28,7 @@ export const useResumes = () => {
                 return parsed;
             } catch (e) {
                 console.error('Failed to parse resumes from localStorage', e);
+                localStorage.removeItem(STORAGE_KEY);
             }
         }
 
