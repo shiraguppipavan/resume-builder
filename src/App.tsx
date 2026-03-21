@@ -160,7 +160,7 @@ const App: React.FC = () => {
 
         <PDFDownloadLink
           key={`pdf-${currentResume.id}-${currentResume.updatedAt || ''}`}
-          document={<ResumePDF data={currentResume} scale={0.80} />}
+          document={<ResumePDF data={currentResume} scale={0.70} />}
           fileName={`${(currentResume.resumeTitle || currentResume.name || 'Resume').replace(/\s+/g, '_')}_Resume.pdf`}
           className="no-print"
         >

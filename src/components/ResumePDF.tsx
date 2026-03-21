@@ -22,8 +22,8 @@ const makeStyles = (s: number) => StyleSheet.create({
     },
     // Header
     header: {
-        padding: 50 * s,
-        paddingBottom: 30 * s,
+        padding: 36 * s,
+        paddingBottom: 20 * s,
         backgroundColor: '#1a1a1a',
         alignItems: 'center',
         flexDirection: 'column',
@@ -32,7 +32,7 @@ const makeStyles = (s: number) => StyleSheet.create({
         fontSize: 30 * s,
         fontWeight: 'bold',
         fontFamily: 'Times-Roman',
-        marginBottom: 32 * s,
+        marginBottom: 16 * s,
         textTransform: 'uppercase',
         color: '#FFFFFF',
         lineHeight: 1.2,
@@ -42,7 +42,7 @@ const makeStyles = (s: number) => StyleSheet.create({
         color: '#D1D5DB',
         textTransform: 'uppercase',
         letterSpacing: 1,
-        marginBottom: 15 * s,
+        marginBottom: 8 * s,
         marginTop: 5 * s,
     },
     contactRow: {
@@ -70,26 +70,26 @@ const makeStyles = (s: number) => StyleSheet.create({
     sidebar: {
         width: '35%',
         backgroundColor: '#FFFFFF',
-        padding: 25 * s,
+        padding: 20 * s,
         borderRightWidth: 1,
         borderRightColor: '#E5E7EB',
     },
     // Main Content (Right)
     mainContent: {
         width: '65%',
-        padding: 30 * s,
-        paddingRight: 30 * s,
+        padding: 22 * s,
+        paddingRight: 22 * s,
     },
     // Section
     section: {
-        marginBottom: 25 * s,
+        marginBottom: 16 * s,
     },
     sectionTitle: {
-        fontSize: 14 * s,
+        fontSize: 12 * s,
         fontWeight: 'bold',
         textTransform: 'uppercase',
         letterSpacing: 2,
-        marginBottom: 12 * s,
+        marginBottom: 8 * s,
         color: '#1a1a1a',
         borderBottomWidth: 1,
         borderBottomColor: '#E5E7EB',
@@ -97,7 +97,7 @@ const makeStyles = (s: number) => StyleSheet.create({
     },
     // Education
     eduItem: {
-        marginBottom: 12 * s,
+        marginBottom: 8 * s,
     },
     eduInst: {
         fontSize: 11 * s,
@@ -181,29 +181,29 @@ const makeStyles = (s: number) => StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: '#E5E7EB',
         borderBottomStyle: 'dotted',
-        marginBottom: 15 * s,
+        marginBottom: 10 * s,
         marginTop: 5 * s,
     },
     expHeader: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'baseline',
-        marginBottom: 10 * s,
+        marginBottom: 4 * s,
     },
     expRole: {
-        fontSize: 14 * s,
+        fontSize: 12 * s,
         fontWeight: 'bold',
         color: '#1a1a1a',
     },
     expDate: {
-        fontSize: 11 * s,
+        fontSize: 9.5 * s,
         color: '#6B7280',
     },
     expCompany: {
-        fontSize: 11 * s,
+        fontSize: 9.5 * s,
         fontWeight: 'bold',
         color: '#4B5563',
-        marginBottom: 12 * s,
+        marginBottom: 6 * s,
         textTransform: 'uppercase',
     },
     bulletRow: {
@@ -212,18 +212,18 @@ const makeStyles = (s: number) => StyleSheet.create({
     },
     bulletPoint: {
         width: 12 * s,
-        fontSize: 11 * s,
+        fontSize: 9.5 * s,
         color: '#374151',
         lineHeight: 1.2,
     },
     bulletText: {
-        fontSize: 11 * s,
+        fontSize: 9.5 * s,
         color: '#374151',
         lineHeight: 1.2,
         textAlign: 'left',
     },
     summary: {
-        fontSize: 12 * s,
+        fontSize: 10 * s,
         lineHeight: 1.5,
         color: '#1F2937',
         textAlign: 'left',
@@ -321,7 +321,7 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data, scale }) => {
                             {Object.keys(safeSkills).length > 0 && (
                             <View style={styles.section}>
                                 <Text style={styles.sectionTitle}>Technical Skills</Text>
-                                <View style={{ flexDirection: 'column', gap: 8 * data_scale }}>
+                                <View style={{ flexDirection: 'column', gap: 4 * data_scale }}>
                                     {Object.entries(safeSkills).map(([category, skillList]) => (
                                         <View key={category} style={{ marginBottom: 4 * data_scale }}>
                                             <Text style={{ fontSize: 10 * data_scale, fontWeight: 'bold', color: '#6B7280', textTransform: 'uppercase', marginBottom: 6 * data_scale }}>
@@ -398,7 +398,7 @@ const ResumePDF: React.FC<ResumePDFProps> = ({ data, scale }) => {
                                             <Text style={styles.expCompany}>{String(job.company || '')} | {String(job.location || '')}</Text>
                                             <View style={{ flexDirection: 'column' }}>
                                                 {(job.highlights || []).filter(h => String(h || '').trim() !== '').map((highlight, idx) => (
-                                                    <View key={idx} style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: idx > 0 ? 16 * data_scale : 0 }}>
+                                                    <View key={idx} style={{ flexDirection: 'row', alignItems: 'flex-start', marginTop: idx > 0 ? 6 * data_scale : 0 }}>
                                                         <Text style={styles.bulletPoint}>•</Text>
                                                         <Text style={styles.bulletText}>{String(highlight || '')}</Text>
                                                     </View>

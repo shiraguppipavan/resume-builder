@@ -1,0 +1,185 @@
+{
+  "resumeTitle": "pavan-devops",
+  "name": "Pavan Gururaj Shiraguppi",
+  "title": "Gen AI Engineer | MLOps & DevOps Engineer | Watsonx SME",
+  "summary": "Generative AI Engineer and MLOps practitioner with a unique trajectory spanning Systems Integration, Data Science, and LLM Engineering. Proven track record of architecting and deploying production-grade AI infrastructure on IBM watsonx (.ai, .data, Orchestrate) and OpenShift, contributing to $10M+ in revenue. Specialized in CI/CD pipelines for model deployment, LLM fine-tuning, RAG architectures, and enterprise DevOps practices. Expert in bridging AI development and platform operations at scale. Bilingual in English and Japanese (N2).",
+  "contact": {
+    "location": "Bengaluru, India",
+    "phone": "(+91) 8861239872",
+    "email": "shiraguppipavan@gmail.com",
+    "linkedin": "linkedin.com/in/pavan-shiraguppi",
+    "linkedinUrl": "https://linkedin.com/in/pavan-shiraguppi"
+  },
+  "experience": [
+    {
+      "id": "628f7f35-79ba-4d1c-b350-1352befc0f90",
+      "role": "Watsonx Platform SME",
+      "company": "IBM INDIA PVT LTD",
+      "location": "Bengaluru, India",
+      "period": "01/2026 - Present",
+      "highlights": [
+        "Lead secure on-premise deployments of the full IBM watsonx stack, including watsonx.ai for LLM inference and Prompt Lab access, watsonx.data as a governed data lakehouse with Presto/Spark query engines, and watsonx Orchestrate for AI-powered workflow automation and digital worker orchestration across enterprise environments.",
+        "Manage end-to-end deployment of the watsonx platform on Red Hat OpenShift, overseeing operator lifecycle management, pod scheduling, resource quotas, and persistent volume configuration to ensure high availability and compliance.",
+        "Architect scalable, air-gapped watsonx.ai inference clusters with GPU node pools on OpenShift, enabling enterprise clients to run Granite and third-party LLMs on-premise with data residency guarantees."
+      ]
+    },
+    {
+      "id": "ibm",
+      "role": "Generative AI Engineer",
+      "company": "IBM India PVT LTD",
+      "location": "Bengaluru, India",
+      "period": "08/2023 - 01/2026",
+      "highlights": [
+        "Spearheaded high-impact Generative AI engagements contributing to over $10M in revenue, designing and optimizing enterprise LLM solutions for digital transformation.",
+        "Fine-tuned and optimized custom Large Language Models (LLMs) including Llama, Granite, and GPT variants to maximize domain-specific accuracy and reduce token latency by 40%.",
+        "Architected advanced RAG (Retrieval-Augmented Generation) systems integrating vector databases (ChromaDB, Pinecone) for context-aware AI applications.",
+        "Built intelligent AI agents using IBM Watsonx Orchestrate and LangChain, enabling autonomous task execution and complex multi-step reasoning."
+      ]
+    },
+    {
+      "id": "kushagramati",
+      "role": "Generative AI Advisor, SME",
+      "company": "Kushagramati Analytics",
+      "location": "Bengaluru, India",
+      "period": "02/2023 - 08/2023",
+      "highlights": [
+        "Advised enterprise clients on Generative AI adoption strategies, identifying high-ROI use cases for LLM integration.",
+        "Conducted feasibility studies for RAG architectures, guiding technical teams on model selection (OpenAI vs Open Source) and infrastructure requirements.",
+        "Established governance frameworks for LLM evaluation, defining metrics for hallucination rates and response accuracy."
+      ]
+    },
+    {
+      "id": "hci-ml",
+      "role": "DevOps Engineer",
+      "company": "HCI",
+      "location": "Osaka, Japan",
+      "period": "04/2022 - 02/2023",
+      "highlights": [
+        "Designed and maintained CI/CD pipelines for robotic software systems, automating build, test, and deployment workflows to reduce release cycle time by 30%.",
+        "Containerized AI inference services and robotic control modules using Docker, enabling consistent deployment across development and production environments.",
+        "Managed Linux-based infrastructure for GPU compute nodes running NLP and computer vision workloads, ensuring high uptime and resource efficiency.",
+        "Implemented monitoring and alerting for deployed ML models and robotic services using Prometheus and Grafana, enabling proactive incident response."
+      ]
+    },
+    {
+      "id": "hci-ds",
+      "role": "Systems Engineer",
+      "company": "HCI",
+      "location": "Osaka, Japan",
+      "period": "12/2020 - 03/2022",
+      "highlights": [
+        "Architected the RoboCafe bio-system, orchestrating interoperability between industrial arms (Kawasaki, Yaskawa, Mitsubishi) and service robots (Pudu Robotics, AGVs).",
+        "Designed the precise integration protocols between stationary industrial robots and mobile service robots, enabling seamless physical handoffs and synchronized path planning.",
+        "Integrated Computer Vision models with robot arm kinematics to enable autonomous object manipulation in a dynamic cafe environment.",
+        "Bridged the gap between hardware interfaces (PLCs, Robot Controllers) and software AI modules, creating a seamless end-to-end automated solution."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "imt",
+      "institution": "Institute of Management Technology, Ghaziabad",
+      "degree": "MBA - Design Thinking and Entrepreneurship",
+      "period": "07/2023 - 06/2024"
+    },
+    {
+      "id": "manipal",
+      "institution": "Manipal Institute of Technology, Manipal",
+      "degree": "B.Tech - Electronics and Instrumentation",
+      "period": "07/2015 - 06/2019"
+    }
+  ],
+  "skills": {
+    "Generative AI": [
+      "LLM Fine-tuning",
+      "RAG Architecture",
+      "Prompt Optimization",
+      "LangChain",
+      "Watsonx",
+      "RAGAS",
+      "CrewAI"
+    ],
+    "DevOps & Infrastructure": [
+      "Red Hat OpenShift",
+      "Kubernetes",
+      "Docker",
+      "Tekton Pipelines",
+      "ArgoCD",
+      "Ansible",
+      "Terraform",
+      "Helm"
+    ],
+    "Machine Learning": [
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "XGBoost",
+      "Hugging Face Transformers"
+    ],
+    "Data Science": [
+      "Pandas",
+      "NumPy",
+      "Statistical Modeling",
+      "A/B Testing",
+      "EDA",
+      "Streamlit",
+      "Gradio"
+    ],
+    "NLP & Computer Vision": [
+      "BERT",
+      "GPT",
+      "Transformers",
+      "OpenCV",
+      "Sentiment Analysis",
+      "Text Classification"
+    ],
+    "Vector Databases": [
+      "ChromaDB",
+      "Pinecone",
+      "FAISS",
+      "Weaviate"
+    ],
+    "Languages": [
+      "Python",
+      "SQL",
+      "Bash"
+    ],
+    "AI Infrastructure & Deployment": [
+      "AWS SageMaker",
+      "MLflow",
+      "Model Serving",
+      "LlamaIndex"
+    ]
+  },
+  "languages": [
+    {
+      "language": "English",
+      "proficiency": "Native or Bilingual Proficiency"
+    },
+    {
+      "language": "Japanese",
+      "proficiency": "Full Professional Proficiency (N2)"
+    }
+  ],
+  "certifications": [
+    "Academy Accreditation - Databricks Lakehouse Fundamentals",
+    "AMR Robot Training - Intermediate Level",
+    "Japanese Language Proficiency - Level N2"
+  ],
+  "publications": [
+    {
+      "title": "RoboCafe: Multi-Robot Cafe Automation System",
+      "url": "https://youtu.be/cvOc5uoqdBo"
+    },
+    {
+      "title": "Library Robot: Autonomous Book Retrieval System",
+      "url": "https://youtu.be/0SNUPvxoKJs"
+    },
+    {
+      "title": "Ritsumeikan University Robotics Demo",
+      "url": "https://youtu.be/_y39o1qxa2Q"
+    }
+  ],
+  "id": "pavan-devops",
+  "updatedAt": "2026-03-21T11:49:31.157Z"
+}
